@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+   <head>
+      <!-- Meta -->
+      <title>Campañas 2002-2006</title>
+      <meta charset="UTF-8">
+      <!-- Styles -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+      <link href="vendor/animate/animate.css" rel="stylesheet" type="text/css"/>
+      <link href="css/style.css" rel="stylesheet" type="text/css"/>
+   </head>
+   <body>
+      <!-- Masthead -->
+      <div class="masthead-4">
+         <div class="container-fluid h-100">
+            <div class="row justify-content-center">
+                <!-- primer candidato -->
+               <div class="col-md-6 col-sm-12  split-image-left-Horacio2">
+                   <div class="col-md-6" style="padding-left: 326px;padding-top: 20px;">
+                        <audio controls>
+                            <source src="audio/Horacio serpa.mp3" type="audio/ogg">
+                        </audio>
+                    </div>
+               </div>
+               <div class="col-md-6 col-sm-12 split-image-right-Uribe">
+                   <div class="col-md-6" style="padding-left: 326px;padding-top: 20px;">
+                        <audio controls>
+                            <source src="audio/urbito1.mp3" type="audio/ogg">
+                        </audio>
+                   </div>
+                   <div style="padding-left: 832px;padding-top: 358px;">
+                     <button style="display: block;width: 75px;height: 75px;border-radius: 50%" type="button" class="btn btn-lg btn-danger" onclick="random()">→</button>
+                   </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Masthead -->
+      <!-- Javascript -->
+      <script src="vendor/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script src="vendor/wow/wow.js"></script>
+      <script src="js/script.js"></script>
+      <script>
+         new WOW().init();
+         function random () {
+
+            var array = [1,2,3,5,6,7,8,9];
+            var rand = Math.random()*array.length | 0;
+            var valor = array[rand];
+            window.location.href = valor+'.html';
+         }
+      </script>
+      <!-- End Javascript -->
+   </body>
+</html>
